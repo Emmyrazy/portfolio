@@ -1,0 +1,22 @@
+# OS Files
+.DS_Store
+._*
+
+# Raw unused folders and loose root files
+Desktop/
+Flyrinzo assets/
+Playground assets/
+Senderlogixc/
+Tracklet/
+*.zip
+Flyrinzo.png
+Mystra.png
+Playground.png
+Sender Logic.png
+Traclet.png
+about us.png
+card element*.png
+circle, round, mark*.png
+ifirst image*.png
+Avatar 1.png
+Avatar 2.png
