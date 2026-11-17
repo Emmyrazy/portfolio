@@ -252,17 +252,27 @@
     margin-bottom: 20px;
   }
 
+  .desktop-br {
+    display: none;
+  }
+
   .hero-title {
-    font-size: clamp(1.85rem, 6.8vw, 2.5rem);
-    line-height: 1.15;
+    font-size: clamp(1.65rem, 5.8vw, 2.2rem);
+    line-height: 1.2;
     margin-bottom: 16px;
+    max-width: 440px;
+    margin-left: auto;
+    margin-right: auto;
+    text-wrap: balance;
   }
 
   .hero-subtitle {
-    font-size: clamp(0.925rem, 3.8vw, 1rem);
+    font-size: clamp(0.92rem, 3.6vw, 1rem);
     line-height: 1.55;
-    margin-bottom: 28px;
+    max-width: 420px;
+    margin: 0 auto 28px;
     padding: 0 4px;
+    text-wrap: balance;
   }
 
   /* Selected Works */
@@ -465,6 +475,24 @@
     max-width: 280px;
     justify-content: center;
     padding: 12px 20px;
+  }
+
+  .hero-title {
+    font-size: clamp(1.45rem, 6.2vw, 1.78rem);
+    line-height: 1.24;
+    max-width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+    text-wrap: balance;
+  }
+
+  .hero-subtitle {
+    font-size: 0.9rem;
+    line-height: 1.54;
+    max-width: 310px;
+    margin: 0 auto 24px;
+    padding: 0 4px;
+    text-wrap: balance;
   }
 
   .hero-title br,
