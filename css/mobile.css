@@ -496,7 +496,7 @@
   }
 
   .hero-title br,
-  .works-heading {
+  .works-heading br{
     display: none;
   }
 
