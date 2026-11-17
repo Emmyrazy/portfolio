@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
 /**
  * Mobile Navigation Drawer
  * Toggles the drawer open/closed on the hamburger button click.
- * Closes when any nav link is tapped.
+ * Closes when any nav link is tapped, on backdrop click, or on Escape key.
  */
 function initMobileMenu() {
   const toggle = document.getElementById('mobileMenuBtn');
@@ -24,18 +24,59 @@ function initMobileMenu() {
 
   if (!toggle || !drawer) return;
 
-  toggle.addEventListener('click', () => {
-    const isOpen = drawer.classList.toggle('open');
-    toggle.setAttribute('aria-expanded', isOpen);
-    drawer.setAttribute('aria-hidden', !isOpen);
+  // Create backdrop element if it doesn't exist
+  let backdrop = document.querySelector('.mobile-nav-backdrop');
+  if (!backdrop) {
+    backdrop = document.createElement('div');
+    backdrop.className = 'mobile-nav-backdrop';
+    document.body.appendChild(backdrop);
+  }
+
+  const closeMenu = () => {
+    drawer.classList.remove('open');
+    backdrop.classList.remove('open');
+    document.body.classList.remove('menu-open');
+    toggle.setAttribute('aria-expanded', 'false');
+    drawer.setAttribute('aria-hidden', 'true');
+    toggle.classList.remove('is-active');
+  };
+
+  const openMenu = () => {
+    drawer.classList.add('open');
+    backdrop.classList.add('open');
+    document.body.classList.add('menu-open');
+    toggle.setAttribute('aria-expanded', 'true');
+    drawer.setAttribute('aria-hidden', 'false');
+    toggle.classList.add('is-active');
+  };
+
+  toggle.addEventListener('click', (e) => {
+    e.stopPropagation();
+    const isOpen = drawer.classList.contains('open');
+    if (isOpen) {
+      closeMenu();
+    } else {
+      openMenu();
+    }
   });
 
+  backdrop.addEventListener('click', closeMenu);
+
   drawer.querySelectorAll('a').forEach(link => {
-    link.addEventListener('click', () => {
-      drawer.classList.remove('open');
-      toggle.setAttribute('aria-expanded', 'false');
-      drawer.setAttribute('aria-hidden', 'true');
-    });
+    link.addEventListener('click', closeMenu);
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && drawer.classList.contains('open')) {
+      closeMenu();
+    }
+  });
+
+  // Close menu if window is resized to desktop width
+  window.addEventListener('resize', () => {
+    if (window.innerWidth > 860 && drawer.classList.contains('open')) {
+      closeMenu();
+    }
   });
 }
 
