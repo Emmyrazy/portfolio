@@ -1243,6 +1243,7 @@ textarea {
   max-width: 480px;
   margin: 0 auto 32px;
   letter-spacing: -0.015em;
+  text-align: center;
 }
 
 /* Skill Stamp Badges Image */
