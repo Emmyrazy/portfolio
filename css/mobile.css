@@ -1,0 +1,621 @@
+/* ==========================================================================
+   EMMANUEL ISHANG PORTFOLIO — MOBILE & RESPONSIVE STYLESHEET
+   File: css/mobile.css
+   Purpose: Modular responsive breakpoints, mobile navigation, touch gestures,
+            and viewport adaptations across all screen sizes.
+   ========================================================================== */
+
+/* ==========================================================================
+   01. CONTAINER & HEADER RESPONSIVE PADDING
+   ========================================================================== */
+@media (max-width: 1200px) {
+  .container {
+    padding: 0 48px;
+  }
+  .site-header {
+    padding: 16px 48px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 20px;
+  }
+  .site-header {
+    padding: 14px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 16px;
+  }
+  .site-header {
+    padding: 12px 16px;
+  }
+}
+
+
+/* ==========================================================================
+   02. MOBILE NAVIGATION DRAWER & MENU TOGGLE
+   ========================================================================== */
+.mobile-menu-btn {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background: #000000;
+  color: #ffffff;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  min-width: 40px;
+  min-height: 40px;
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.2s ease;
+  -webkit-tap-highlight-color: transparent;
+  z-index: 1001;
+}
+
+.mobile-menu-btn:hover {
+  background: #1f2937;
+}
+
+.mobile-menu-btn:active {
+  transform: scale(0.94);
+}
+
+.mobile-menu-btn svg {
+  transition: transform 0.25s ease;
+}
+
+.mobile-menu-btn.is-active svg {
+  transform: rotate(90deg);
+}
+
+/* Mobile Backdrop Overlay */
+.mobile-nav-backdrop {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
+  z-index: 998;
+  opacity: 0;
+  transition: opacity 0.25s ease;
+  pointer-events: none;
+}
+
+.mobile-nav-backdrop.open {
+  display: block;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* Mobile Navigation Drawer */
+.mobile-nav-drawer {
+  display: none;
+  position: fixed;
+  top: 68px;
+  left: 16px;
+  right: 16px;
+  background: rgba(15, 15, 18, 0.96);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  backdrop-filter: blur(20px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 16px;
+  padding: 12px;
+  box-shadow: 0 20px 48px rgba(0, 0, 0, 0.4);
+  z-index: 999;
+}
+
+.mobile-nav-drawer.open {
+  display: block;
+  animation: fadeSlideDown 0.22s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes fadeSlideDown {
+  from { opacity: 0; transform: translateY(-8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.mobile-nav-drawer ul {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.mobile-nav-drawer a {
+  display: flex;
+  align-items: center;
+  padding: 12px 16px;
+  font-family: var(--font-heading);
+  color: #d1d5db;
+  font-size: 0.95rem;
+  font-weight: 500;
+  border-radius: 10px;
+  transition: background 0.18s, color 0.18s;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.mobile-nav-drawer a:hover,
+.mobile-nav-drawer a:active,
+.mobile-nav-drawer a.active {
+  background: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+}
+
+
+/* ==========================================================================
+   03. TABLET LANDSCAPE & MEDIUM DESKTOPS (<= 1024px)
+   ========================================================================== */
+@media (max-width: 1024px) {
+  .hero-section {
+    padding: 120px 0 50px;
+  }
+
+  .about-collage-container {
+    grid-template-columns: 1fr;
+    max-width: 480px;
+    gap: 36px;
+  }
+
+  .about-polaroid-card {
+    max-width: 260px;
+    margin: 0 auto;
+  }
+
+  .insights-3col-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .insight-statement-card {
+    grid-column: span 2;
+  }
+}
+
+
+/* ==========================================================================
+   04. TABLET PORTRAIT & SWITCH TO MOBILE NAVIGATION (<= 860px)
+   ========================================================================== */
+@media (max-width: 860px) {
+  .nav-pill-capsule,
+  .btn-contact-nav {
+    display: none;
+  }
+
+  .mobile-menu-btn {
+    display: flex;
+  }
+
+  .contact-split-layout {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+
+  .contact-lead-desc {
+    margin-bottom: 24px;
+  }
+}
+
+
+/* ==========================================================================
+   05. MOBILE PHONES & SMALL TABLETS (<= 768px)
+   ========================================================================== */
+@media (max-width: 768px) {
+  /* Layout Spacing */
+  .section-works,
+  .section-about,
+  .section-insights {
+    padding: 44px 0;
+  }
+
+  .section-contact {
+    padding: 44px 0 60px;
+  }
+
+  /* Hero Section */
+  .hero-section {
+    min-height: auto;
+    padding: 100px 0 44px;
+  }
+
+  .hero-art-fan {
+    margin-bottom: 20px;
+  }
+
+  .hero-title {
+    font-size: clamp(1.85rem, 6.8vw, 2.5rem);
+    line-height: 1.15;
+    margin-bottom: 16px;
+  }
+
+  .hero-subtitle {
+    font-size: clamp(0.925rem, 3.8vw, 1rem);
+    line-height: 1.55;
+    margin-bottom: 28px;
+    padding: 0 4px;
+  }
+
+  /* Selected Works */
+  .works-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 28px;
+  }
+
+  .works-heading {
+    font-size: clamp(1.85rem, 7vw, 2.75rem);
+    line-height: 1.15;
+  }
+
+  .works-header-right p {
+    font-size: 0.925rem;
+    line-height: 1.55;
+    max-width: 100%;
+  }
+
+  .works-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .work-visual-box {
+    border-radius: 16px;
+  }
+
+  .work-name {
+    font-size: 1.25rem;
+  }
+
+  .btn-arrow-circle-clean {
+    width: 36px;
+    height: 36px;
+    min-width: 36px;
+    min-height: 36px;
+    font-size: 1rem;
+  }
+
+  /* About Me Section */
+  .whats-up-badge {
+    font-size: 0.95rem;
+    padding: 4px 14px;
+    margin-bottom: 32px;
+  }
+
+  .about-bio-para {
+    font-size: clamp(0.95rem, 4.2vw, 1.1rem);
+    line-height: 1.62;
+    margin-bottom: 24px;
+  }
+
+  .about-stamps-wrap {
+    max-width: 100%;
+  }
+
+  /* Thoughts / Insights */
+  .insights-header {
+    margin-bottom: 24px;
+  }
+
+  .insights-3col-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .insight-statement-card {
+    grid-column: span 1;
+    padding: 26px 20px;
+  }
+
+  .statement-text {
+    font-size: clamp(1.2rem, 5vw, 1.45rem);
+    margin-bottom: 20px;
+  }
+
+  /* Contact Section */
+  .contact-big-title {
+    font-size: clamp(1.85rem, 6.5vw, 2.5rem);
+  }
+
+  .contact-dark-card {
+    padding: 22px 18px 20px;
+    border-radius: 16px;
+  }
+
+  /* Ensure inputs are >= 16px on mobile to prevent iOS Safari auto-zoom */
+  .field-input {
+    font-size: 16px;
+    padding: 12px 14px;
+  }
+
+  .social-square-pill {
+    width: 38px;
+    height: 38px;
+    border-radius: 8px;
+  }
+
+  /* Footer */
+  .site-footer {
+    padding: 44px 0 32px;
+  }
+
+  .footer-inner {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .footer-left,
+  .footer-right {
+    align-items: center;
+  }
+
+  .footer-right {
+    gap: 12px;
+  }
+
+  .footer-nav-links {
+    gap: 24px;
+  }
+}
+
+
+/* ==========================================================================
+   06. SMALL SMARTPHONES (<= 480px)
+   ========================================================================== */
+@media (max-width: 480px) {
+  .logo-text {
+    font-size: 0.95rem;
+  }
+
+  .mobile-menu-btn {
+    width: 38px;
+    height: 38px;
+  }
+
+  .mobile-nav-drawer {
+    top: 60px;
+    left: 12px;
+    right: 12px;
+    padding: 10px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+  }
+
+  .btn-black-pill,
+  .btn-outline-pill {
+    width: 100%;
+    max-width: 280px;
+    justify-content: center;
+    padding: 12px 20px;
+  }
+
+  .hero-title br,
+  .works-heading br {
+    display: none;
+  }
+
+  .works-grid {
+    gap: 26px;
+  }
+
+  .about-collage-container {
+    gap: 24px;
+  }
+
+  .about-polaroid-card {
+    max-width: 220px;
+  }
+
+  .footer-nav-links {
+    gap: 18px;
+  }
+}
+
+
+/* ==========================================================================
+   07. PLAYGROUND PAGE MOBILE & RESPONSIVE RULES
+   ========================================================================== */
+@media (max-width: 900px) {
+  .pg-phones-row {
+    grid-template-columns: 1fr;
+    max-width: 340px;
+    margin: 0 auto;
+  }
+
+  .pg-web3-cards,
+  .pg-esports-2col,
+  .pg-esports-3col,
+  .pg-esports-hero,
+  .pg-saas-dashboard,
+  .pg-esports-footer {
+    grid-template-columns: 1fr;
+  }
+
+  .pg-illustrations-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .playground-section {
+    padding-top: 96px;
+    padding-bottom: 48px;
+  }
+
+  .playground-header {
+    margin-bottom: 28px;
+  }
+
+  .playground-title {
+    font-size: clamp(1.85rem, 7vw, 3.25rem);
+  }
+
+  .playground-subtitle {
+    font-size: clamp(0.9rem, 3.8vw, 0.95rem);
+    line-height: 1.55;
+  }
+
+  .pg-showcase-stack {
+    gap: 28px;
+  }
+
+  .pg-phones-flex {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;
+    gap: 16px;
+    margin-left: -20px;
+    margin-right: -20px;
+    padding: 0 20px 16px;
+    scrollbar-width: none;
+  }
+
+  .pg-phones-flex::-webkit-scrollbar {
+    display: none;
+  }
+
+  .pg-phone-flex-item {
+    flex: 0 0 82%;
+    max-width: 300px;
+    scroll-snap-align: center;
+  }
+
+  .pg-showcase-img {
+    border-radius: 10px;
+  }
+
+  .pg-illustrations-section {
+    margin-top: 40px;
+    padding-top: 28px;
+    border-top: 1px solid var(--color-divider);
+  }
+
+  .pg-illustrations-heading {
+    font-size: 1.35rem;
+    margin-bottom: 20px;
+  }
+
+  .pg-illust-stack {
+    gap: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .playground-section {
+    padding-top: 88px;
+    padding-bottom: 40px;
+  }
+
+  .pg-phones-flex {
+    margin-left: -16px;
+    margin-right: -16px;
+    padding: 0 16px 14px;
+  }
+}
+
+
+/* ==========================================================================
+   08. CASE STUDY DETAIL PAGES MOBILE & RESPONSIVE RULES
+   (Flyrinzo, Traclet, Sender Logic, Mystra)
+   ========================================================================== */
+@media (max-width: 768px) {
+  .cs-detail-section {
+    padding-top: 96px;
+    padding-bottom: 56px;
+  }
+
+  .cs-header {
+    margin-bottom: 32px;
+  }
+
+  .cs-title {
+    font-size: clamp(2rem, 7.5vw, 3.25rem);
+    margin-bottom: 12px;
+  }
+
+  .cs-lead {
+    font-size: clamp(0.925rem, 3.8vw, 1.05rem);
+    line-height: 1.6;
+    margin-bottom: 24px;
+  }
+
+  .cs-meta-grid {
+    gap: 20px;
+    padding-top: 14px;
+  }
+
+  .cs-content-stack {
+    gap: 48px;
+  }
+
+  .cs-narrative-block {
+    gap: 18px;
+  }
+
+  .cs-heading-2 {
+    font-size: clamp(1.35rem, 5.2vw, 2.1rem);
+    line-height: 1.25;
+    margin-bottom: 10px;
+  }
+
+  .cs-para {
+    font-size: clamp(0.875rem, 3.5vw, 0.95rem);
+    line-height: 1.62;
+  }
+
+  .cs-media-frame {
+    border-radius: 12px;
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.05);
+  }
+
+  .cs-more-section {
+    margin-top: 60px;
+    padding-top: 32px;
+  }
+
+  .cs-more-title {
+    font-size: 1.35rem;
+    margin-bottom: 24px;
+  }
+
+  .cs-more-grid {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+}
+
+@media (max-width: 520px) {
+  .cs-detail-section {
+    padding-top: 88px;
+    padding-bottom: 44px;
+  }
+
+  .cs-meta-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px 16px;
+  }
+
+  .cs-meta-item:last-child {
+    grid-column: span 2;
+  }
+
+  .cs-content-stack {
+    gap: 36px;
+  }
+
+  .cs-narrative-block {
+    gap: 14px;
+  }
+}
