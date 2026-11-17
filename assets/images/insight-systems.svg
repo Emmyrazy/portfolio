@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 360" fill="none">
+  <defs>
+    <linearGradient id="metalGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#18181b" />
+      <stop offset="20%" stop-color="#71717a" />
+      <stop offset="45%" stop-color="#f4f4f5" />
+      <stop offset="60%" stop-color="#a1a1aa" />
+      <stop offset="80%" stop-color="#3f3f46" />
+      <stop offset="100%" stop-color="#18181b" />
+    </linearGradient>
+    <linearGradient id="metalGrad2" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#27272a" />
+      <stop offset="30%" stop-color="#e4e4e7" />
+      <stop offset="50%" stop-color="#ffffff" />
+      <stop offset="70%" stop-color="#71717a" />
+      <stop offset="100%" stop-color="#09090b" />
+    </linearGradient>
+    <linearGradient id="roseAccent" x1="0%" y1="50%" x2="100%" y2="50%">
+      <stop offset="0%" stop-color="#fda4af" stop-opacity="0.2" />
+      <stop offset="50%" stop-color="#f43f5e" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#fb7185" stop-opacity="0" />
+    </linearGradient>
+  </defs>
+  
+  <rect width="500" height="360" fill="#0b0c10" rx="16" />
+  
+  <!-- Flowing diagonal metallic silk folds -->
+  <path d="M-50 400 C100 280, 200 320, 350 180 C450 90, 520 20, 550 -40 L550 400 Z" fill="url(#metalGrad1)" opacity="0.6" />
+  
+  <path d="M-60 280 C80 180, 220 240, 360 80 C440 -10, 480 -30, 550 -40 L550 200 C450 280, 300 240, 150 360 Z" fill="url(#metalGrad2)" opacity="0.75" />
+  
+  <path d="M-40 180 C120 80, 240 150, 400 20 C460 -30, 500 -20, 550 -30 L550 120 C400 180, 280 120, 80 280 Z" fill="url(#metalGrad1)" opacity="0.5" />
+  
+  <path d="M-80 320 Q180 140 380 200 T580 80" stroke="#ffffff" stroke-width="3" opacity="0.4" fill="none" filter="blur(2px)" />
+  <path d="M-50 240 Q220 180 420 120 T550 -10" stroke="#f4f4f5" stroke-width="2" opacity="0.6" fill="none" />
+  <path d="M-20 380 Q250 240 450 160" stroke="#ffffff" stroke-width="1.5" opacity="0.8" fill="none" />
+
+  <!-- Rose gold / warm ambient light reflection -->
+  <circle cx="280" cy="160" r="180" fill="url(#roseAccent)" />
+</svg>

@@ -1,0 +1,29 @@
+# Operating System Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Raw design exports and working folders
+Desktop/
+Flyrinzo assets/
+Playground assets/
+Senderlogixc/
+Tracklet/
+*.zip
+
+# Raw unoptimized root screenshots (all production assets are in assets/)
+Flyrinzo.png
+Mystra.png
+Playground.png
+Sender Logic.png
+Traclet.png
+about us.png
+card element*.png
+circle, round, mark*.png
+ifirst image*.png
+Avatar 1.png
+Avatar 2.png

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Playground — Emmanuel Ishang</title>
+  <meta name="description" content="A space for experiments, visual explorations, and ideas in progress by Emmanuel Ishang.">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Accessibility: Skip to Content Link -->
+  <a href="#main-content" class="skip-to-content">Skip to content</a>
+
+  <!-- ===================================================================
+       HEADER & FLOATING NAVIGATION
+       =================================================================== -->
+  <header class="site-header" role="banner">
+    <div class="nav-container">
+      
+      <!-- Brand Logo / Name -->
+      <a href="index.html#home" class="logo-text" aria-label="Emmanuel Ishang Home">
+        Emmanuel Ishang
+      </a>
+
+      <!-- Center Black Pill Capsule Navigation -->
+      <nav class="nav-pill-capsule" role="navigation" aria-label="Main Navigation">
+        <ul>
+          <li><a href="index.html#home">Home</a></li>
+          <li><a href="index.html#works">Works</a></li>
+          <li><a href="playground.html" class="active">Playground</a></li>
+          <li><a href="index.html#about">About</a></li>
+        </ul>
+      </nav>
+
+      <!-- Right Contact Action -->
+      <a href="index.html#contact" class="btn-contact-nav" aria-label="Contact Emmanuel">
+        <span>Contact me</span>
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <line x1="7" y1="17" x2="17" y2="7"></line>
+          <polyline points="7 7 17 7 17 17"></polyline>
+        </svg>
+      </a>
+
+      <!-- Mobile Navigation Toggle Button -->
+      <button id="mobileMenuBtn" class="mobile-menu-btn" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobileNavDrawer">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobileNavDrawer" class="mobile-nav-drawer" aria-hidden="true">
+      <ul>
+        <li><a href="index.html#home">Home</a></li>
+        <li><a href="index.html#works">Works</a></li>
+        <li><a href="playground.html" class="active">Playground</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#contact">Contact me</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- ===================================================================
+       MAIN CONTENT CONTAINER
+       =================================================================== -->
+  <main id="main-content" role="main">
+    <section class="playground-section">
+      <div class="container">
+
+        <!-- Header -->
+        <div class="playground-header">
+          <h1 class="playground-title">The Playground</h1>
+          <p class="playground-subtitle">
+            A collection of experiments, side projects, and creative explorations driven by curiosity, imagination, and the freedom to try something different.
+          </p>
+        </div>
+
+        <!-- Vertical Showcase Stack -->
+        <div class="pg-showcase-stack">
+          <!-- Row 1: 3 High-Quality Phones in Responsive Horizontal Flexbox -->
+          <div class="pg-phones-flex">
+            <div class="pg-phone-flex-item">
+              <img src="assets/images/playground-phone-1.png" alt="Book discovery personalized recommendation screen" class="pg-phone-flex-img" width="1482" height="3072">
+            </div>
+            <div class="pg-phone-flex-item">
+              <img src="assets/images/playground-phone-2.png" alt="Pick a few favorites reading journey screen" class="pg-phone-flex-img" width="1482" height="3072">
+            </div>
+            <div class="pg-phone-flex-item">
+              <img src="assets/images/playground-phone-3.png" alt="OmniVisuals generative AI assistant screen" class="pg-phone-flex-img" width="1482" height="3072">
+            </div>
+          </div>
+
+          <img src="assets/images/playground-web-1.png" alt="TokenSwap Web3 platform desktop UI" class="pg-showcase-img" width="3072" height="2121" loading="lazy">
+
+          <img src="assets/images/playground-mobile-2.png" alt="Connection, Career AI, and Pookie Boo NFT mobile screens" class="pg-showcase-img" width="3072" height="1968" loading="lazy">
+
+          <img src="assets/images/playground-web-2.png" alt="Nexdo AI productivity workspace desktop UI" class="pg-showcase-img" width="3072" height="2121" loading="lazy">
+
+          <img src="assets/images/playground-web-3.png" alt="Milogames esports tournament platform desktop UI" class="pg-showcase-img" width="1299" height="3072" loading="lazy">
+        </div>
+
+        <!-- Some Illustrations Section -->
+        <div class="pg-illustrations-section">
+          <h2 class="pg-illustrations-heading">Some Illustrations</h2>
+
+          <div class="pg-illust-stack">
+            <img src="assets/images/playground-illust-1.png" alt="Character portrait illustrations" class="pg-illust-img" width="3072" height="2124" loading="lazy">
+
+            <img src="assets/images/playground-illust-2.png" alt="Habeep promotional hand illustrations" class="pg-illust-img" width="3072" height="1485" loading="lazy">
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================================================================
+       FOOTER
+       =================================================================== -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-orbit-bg" aria-hidden="true">
+      <img src="assets/images/orbit-bg-pattern.png" alt="" width="1024" height="1024">
+    </div>
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <div class="footer-brand-name">Ishang Emmanuel</div>
+        <div class="footer-brand-role">
+          <span class="footer-status-dot" aria-hidden="true"></span>
+          <span>UI/UX Designer</span>
+        </div>
+      </div>
+
+      <div class="footer-right">
+        <ul class="footer-nav-links">
+          <li><a href="index.html#works">Works</a></li>
+          <li><a href="playground.html">Playground</a></li>
+          <li><a href="index.html#about">About</a></li>
+        </ul>
+        <div class="footer-brand-copy">
+          © 2026 Ishang Emmanuel
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Main Application Script -->
+  <script src="js/app.js"></script>
+</body>
+</html>

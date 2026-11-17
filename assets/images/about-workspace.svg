@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 380" fill="none">
+  <!-- Crisp photo polaroid background -->
+  <rect width="320" height="380" rx="16" fill="#f4f4f5" />
+  
+  <g transform="translate(10, 15)">
+    <!-- Room wall backdrop & warm sunlight gradient -->
+    <rect x="10" y="10" width="280" height="300" rx="8" fill="#e4e4e7" />
+    <path d="M10 10 L290 10 L290 200 L10 240 Z" fill="#f5f5f4" opacity="0.6" />
+    
+    <!-- Floor / Rug -->
+    <ellipse cx="150" cy="275" rx="120" ry="32" fill="#d4d4d8" opacity="0.6" />
+    
+    <!-- Desk surface (wood warm tone) -->
+    <polygon points="30,195 270,195 285,225 15,225" fill="#facc15" opacity="0.3" />
+    <polygon points="15,225 285,225 285,232 15,232" fill="#ca8a04" opacity="0.4" />
+    <!-- Desk legs -->
+    <rect x="35" y="232" width="6" height="68" fill="#18181b" rx="2" />
+    <rect x="259" y="232" width="6" height="68" fill="#18181b" rx="2" />
+    
+    <!-- Modern Ergonomic Desk Chair -->
+    <path d="M115 220 C115 170 185 170 185 220 Z" fill="#18181b" opacity="0.9" />
+    <rect x="120" y="215" width="60" height="15" rx="6" fill="#27272a" />
+    <rect x="147" y="230" width="6" height="45" fill="#52525b" />
+    <path d="M130 275 L170 275 M150 275 L135 285 M150 275 L165 285" stroke="#27272a" stroke-width="4" stroke-linecap="round" />
+
+    <!-- Laptop (MacBook Pro) on desk -->
+    <!-- Screen -->
+    <rect x="105" y="125" width="90" height="60" rx="4" fill="#09090b" stroke="#71717a" stroke-width="2" />
+    <!-- Screen display: Figma / UI wireframe -->
+    <rect x="109" y="129" width="82" height="52" rx="2" fill="#18181b" />
+    <!-- UI interface mockup on laptop -->
+    <rect x="113" y="133" width="24" height="44" rx="2" fill="#27272a" />
+    <rect x="141" y="133" width="46" height="18" rx="2" fill="#3b82f6" opacity="0.4" />
+    <rect x="141" y="155" width="21" height="22" rx="2" fill="#10b981" opacity="0.3" />
+    <rect x="166" y="155" width="21" height="22" rx="2" fill="#f59e0b" opacity="0.3" />
+    <!-- Laptop keyboard base -->
+    <path d="M95 185 L205 185 L215 197 L85 197 Z" fill="#e4e4e7" stroke="#71717a" stroke-width="1.5" />
+    <rect x="135" y="193" width="30" height="2.5" rx="1" fill="#a1a1aa" />
+
+    <!-- Designer Desk Lamp (Minimalist architectural) -->
+    <path d="M60 195 L60 140 L85 130" stroke="#18181b" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+    <ellipse cx="60" cy="195" rx="10" ry="3" fill="#18181b" />
+    <path d="M80 125 L95 135 L88 142 L75 132 Z" fill="#f59e0b" />
+    <!-- Lamp soft light beam -->
+    <polygon points="85,138 60,195 120,195 95,142" fill="#fef08a" opacity="0.18" />
+
+    <!-- Cute Succulent Plant in ceramic pot -->
+    <ellipse cx="235" cy="195" rx="12" ry="4" fill="#a1a1aa" opacity="0.4" />
+    <path d="M226 182 L244 182 L241 195 L229 195 Z" fill="#ffffff" stroke="#71717a" stroke-width="1.5" />
+    <!-- Leaves -->
+    <ellipse cx="235" cy="176" rx="4" ry="9" fill="#10b981" />
+    <ellipse cx="229" cy="179" rx="4" ry="7" transform="rotate(-25 229 179)" fill="#059669" />
+    <ellipse cx="241" cy="179" rx="4" ry="7" transform="rotate(25 241 179)" fill="#34d399" />
+
+    <!-- Coffee Mug -->
+    <rect x="208" y="186" width="10" height="12" rx="2" fill="#ef4444" />
+    <path d="M218 189 C221 189 221 193 218 194" stroke="#ef4444" stroke-width="2" fill="none" />
+
+    <!-- Notebook & Pen -->
+    <polygon points="45,188 72,188 75,200 48,200" fill="#3b82f6" opacity="0.8" />
+    <line x1="77" y1="189" x2="79" y2="201" stroke="#18181b" stroke-width="2" stroke-linecap="round" />
+  </g>
+  
+  <!-- "My creative lab" caption -->
+  <text x="160" y="358" font-family="'Caveat', 'Comic Sans MS', cursive, sans-serif" font-size="22" font-weight="700" fill="#27272a" text-anchor="middle" letter-spacing="1">Workspace ☕</text>
+</svg>

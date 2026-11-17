@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 380" fill="none">
+  <!-- Soft pink background -->
+  <rect width="320" height="380" rx="16" fill="#fbcfe8" />
+  
+  <g transform="translate(10, 20)">
+    <!-- Shoulders & Dark Hoodie/Shirt -->
+    <path d="M50 330 C70 260, 110 245, 150 245 C190 245, 230 260, 250 330 Z" fill="#18181b" stroke="#18181b" stroke-width="4" stroke-linejoin="round" />
+    
+    <!-- Neck -->
+    <path d="M128 200 L128 250 C128 255, 172 255, 172 250 L172 200 Z" fill="#fde68a" stroke="#18181b" stroke-width="4" stroke-linejoin="round" />
+    <!-- Collar shadow -->
+    <path d="M128 220 C140 235, 160 235, 172 220" stroke="#18181b" stroke-width="3" fill="none" stroke-linecap="round" />
+    
+    <!-- Face / Head shape -->
+    <path d="M102 120 C100 190, 115 220, 150 220 C185 220, 200 190, 198 120 C198 80, 102 80, 102 120 Z" fill="#fde68a" stroke="#18181b" stroke-width="4" stroke-linejoin="round" />
+    
+    <!-- Ears -->
+    <path d="M96 135 C88 135, 88 158, 98 160" fill="#fde68a" stroke="#18181b" stroke-width="4" stroke-linecap="round" />
+    <path d="M204 135 C212 135, 212 158, 202 160" fill="#fde68a" stroke="#18181b" stroke-width="4" stroke-linecap="round" />
+    <path d="M94 145 C95 152, 97 154, 98 152" stroke="#18181b" stroke-width="2.5" fill="none" />
+    <path d="M206 145 C205 152, 203 154, 202 152" stroke="#18181b" stroke-width="2.5" fill="none" />
+    
+    <!-- Hair sticking out from cap -->
+    <path d="M98 125 C92 135, 96 150, 102 148 C99 135, 104 130, 106 122" fill="#18181b" stroke="#18181b" stroke-width="3" />
+    <path d="M202 125 C208 135, 204 150, 198 148 C201 135, 196 130, 194 122" fill="#18181b" stroke="#18181b" stroke-width="3" />
+
+    <!-- Backwards Cap -->
+    <!-- Cap dome -->
+    <path d="M95 110 C95 55, 205 55, 205 110 C195 106, 105 106, 95 110 Z" fill="#ffffff" stroke="#18181b" stroke-width="4" stroke-linejoin="round" />
+    <!-- Cap rim / sweatband -->
+    <path d="M92 110 C92 104, 208 104, 208 110 C208 116, 92 116, 92 110 Z" fill="#ffffff" stroke="#18181b" stroke-width="4" stroke-linejoin="round" />
+    <!-- Cap backwards visor / brim -->
+    <path d="M82 104 C75 98, 72 88, 88 84 C100 81, 106 88, 102 104" fill="#ffffff" stroke="#18181b" stroke-width="3.5" stroke-linejoin="round" />
+    <!-- Cap top button -->
+    <ellipse cx="150" cy="58" rx="7" ry="4" fill="#18181b" />
+    <!-- Cap seams -->
+    <path d="M150 58 Q132 82, 126 106" stroke="#18181b" stroke-width="2" fill="none" opacity="0.6" />
+    <path d="M150 58 Q168 82, 174 106" stroke="#18181b" stroke-width="2" fill="none" opacity="0.6" />
+
+    <!-- Eyebrows -->
+    <path d="M116 132 C122 128, 134 130, 138 134" stroke="#18181b" stroke-width="3.5" stroke-linecap="round" fill="none" />
+    <path d="M162 134 C166 130, 178 128, 184 132" stroke="#18181b" stroke-width="3.5" stroke-linecap="round" fill="none" />
+    
+    <!-- Eyes -->
+    <circle cx="127" cy="144" r="5" fill="#18181b" />
+    <circle cx="173" cy="144" r="5" fill="#18181b" />
+    <!-- Eye highlights -->
+    <circle cx="125.5" cy="142.5" r="1.5" fill="#ffffff" />
+    <circle cx="171.5" cy="142.5" r="1.5" fill="#ffffff" />
+    
+    <!-- Cheerful rosy cheeks -->
+    <ellipse cx="118" cy="158" rx="8" ry="4.5" fill="#f472b6" opacity="0.5" />
+    <ellipse cx="182" cy="158" rx="8" ry="4.5" fill="#f472b6" opacity="0.5" />
+    
+    <!-- Nose -->
+    <path d="M148 144 C152 153, 148 160, 144 162 C141 163, 148 165, 153 163" stroke="#18181b" stroke-width="3" stroke-linecap="round" fill="none" />
+    
+    <!-- Warm confident smile -->
+    <path d="M130 178 C138 194, 162 194, 170 178" stroke="#18181b" stroke-width="3.5" stroke-linecap="round" fill="none" />
+    <!-- Smile corner creases -->
+    <path d="M127 175 C129 178, 131 180, 132 181" stroke="#18181b" stroke-width="2.5" stroke-linecap="round" />
+    <path d="M173 175 C171 178, 169 180, 168 181" stroke="#18181b" stroke-width="2.5" stroke-linecap="round" />
+
+    <!-- Cute little chin dimple / line -->
+    <path d="M147 205 C150 207, 153 207, 155 205" stroke="#18181b" stroke-width="2.5" stroke-linecap="round" fill="none" />
+  </g>
+  
+  <!-- "Emmy" handwritten signature at the bottom -->
+  <text x="160" y="360" font-family="'Caveat', 'Comic Sans MS', cursive, sans-serif" font-size="24" font-weight="700" fill="#18181b" text-anchor="middle" letter-spacing="1">Emmy ✨</text>
+</svg>
