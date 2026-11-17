@@ -156,14 +156,40 @@
   }
 
   .about-collage-container {
-    grid-template-columns: 1fr;
-    max-width: 480px;
-    gap: 36px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "polaroid-left polaroid-right"
+      "bio-content bio-content";
+    gap: 20px;
+    max-width: 520px;
+    margin: 0 auto;
+    align-items: center;
   }
 
-  .about-polaroid-card {
-    max-width: 260px;
-    margin: 0 auto;
+  .about-collage-container > .about-polaroid-card:first-of-type {
+    grid-area: polaroid-left;
+    width: 100%;
+    max-width: 220px;
+    justify-self: end;
+    transform: rotate(-3deg);
+  }
+
+  .about-collage-container > .about-polaroid-card:last-of-type {
+    grid-area: polaroid-right;
+    width: 100%;
+    max-width: 220px;
+    justify-self: start;
+    transform: rotate(3deg);
+  }
+
+  .about-center-text {
+    grid-area: bio-content;
+    width: 100%;
+    margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .insights-3col-grid {
@@ -279,21 +305,63 @@
     font-size: 1rem;
   }
 
-  /* About Me Section */
+  /* About Me Section — Two polaroids on top together, bio text below, stamps below */
+  .about-collage-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "polaroid-left polaroid-right"
+      "bio-content bio-content";
+    gap: 16px;
+    max-width: 440px;
+    margin: 0 auto;
+    align-items: center;
+  }
+
+  .about-collage-container > .about-polaroid-card:first-of-type {
+    grid-area: polaroid-left;
+    width: 100%;
+    max-width: 195px;
+    justify-self: end;
+    transform: rotate(-3deg);
+  }
+
+  .about-collage-container > .about-polaroid-card:last-of-type {
+    grid-area: polaroid-right;
+    width: 100%;
+    max-width: 195px;
+    justify-self: start;
+    transform: rotate(3deg);
+  }
+
+  .about-center-text {
+    grid-area: bio-content;
+    width: 100%;
+    margin-top: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+  }
+
   .whats-up-badge {
     font-size: 0.95rem;
     padding: 4px 14px;
-    margin-bottom: 32px;
-  }
-
-  .about-bio-para {
-    font-size: clamp(0.95rem, 4.2vw, 1.1rem);
-    line-height: 1.62;
     margin-bottom: 24px;
   }
 
+  .about-bio-para {
+    width: 100%;
+    font-size: clamp(0.95rem, 4.2vw, 1.05rem);
+    line-height: 1.62;
+    margin-bottom: 24px;
+    text-align: left;
+  }
+
   .about-stamps-wrap {
-    max-width: 100%;
+    width: 100%;
+    max-width: 360px;
+    margin: 0 auto;
   }
 
   /* Thoughts / Insights */
@@ -409,11 +477,26 @@
   }
 
   .about-collage-container {
-    gap: 24px;
+    gap: 12px;
+    max-width: 100%;
   }
 
-  .about-polaroid-card {
-    max-width: 220px;
+  .about-collage-container > .about-polaroid-card:first-of-type {
+    max-width: 165px;
+    transform: rotate(-2.5deg);
+  }
+
+  .about-collage-container > .about-polaroid-card:last-of-type {
+    max-width: 165px;
+    transform: rotate(2.5deg);
+  }
+
+  .about-center-text {
+    margin-top: 8px;
+  }
+
+  .about-stamps-wrap {
+    max-width: 320px;
   }
 
   .footer-nav-links {
