@@ -252,10 +252,6 @@
     margin-bottom: 20px;
   }
 
-  .desktop-br {
-    display: none;
-  }
-
   .hero-title {
     font-size: clamp(1.65rem, 5.8vw, 2.2rem);
     line-height: 1.2;
@@ -493,11 +489,6 @@
     margin: 0 auto 24px;
     padding: 0 4px;
     text-wrap: balance;
-  }
-
-  .hero-title br,
-  .works-heading br{
-    display: none;
   }
 
   .works-grid {
