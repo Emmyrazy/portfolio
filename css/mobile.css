@@ -412,57 +412,76 @@
     border-radius: 8px;
   }
 
-  /* Footer: Vertically Stacked Mobile Layout */
+  /* Footer: Vertically Stacked Mobile Layout — strictly aligned left */
   .site-footer {
     padding: 44px 0 32px;
   }
 
   .footer-inner {
-    flex-direction: column;
-    align-items: flex-start;
-    text-align: left;
-    gap: 20px;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    text-align: left !important;
+    gap: 20px !important;
+    width: 100% !important;
   }
 
   .footer-left {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    text-align: left;
-    gap: 4px;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    text-align: left !important;
+    gap: 4px !important;
+    width: 100% !important;
   }
 
   .footer-brand-name {
-    font-size: 1rem;
+    font-size: 1rem !important;
+    text-align: left !important;
   }
 
   .footer-brand-role {
-    font-size: 0.75rem;
+    font-size: 0.75rem !important;
+    text-align: left !important;
+    justify-content: flex-start !important;
   }
 
   .footer-right {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    text-align: left;
-    gap: 12px;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    text-align: left !important;
+    gap: 12px !important;
+    width: 100% !important;
   }
 
   .footer-nav-links {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    gap: 24px;
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: flex-start !important;
+    align-items: center !important;
+    gap: 24px !important;
+    width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  .footer-nav-links li {
+    margin: 0 !important;
+    padding: 0 !important;
   }
 
   .footer-nav-links a {
-    font-size: 0.85rem;
+    font-size: 0.85rem !important;
+    text-align: left !important;
   }
 
   .footer-brand-copy {
-    font-size: 0.75rem;
-    color: #52525b;
-    text-align: left;
+    font-size: 0.75rem !important;
+    color: #52525b !important;
+    text-align: left !important;
+    width: 100% !important;
+    margin: 0 !important;
   }
 }
 
@@ -547,11 +566,14 @@
   }
 
   .footer-inner {
-    gap: 18px;
+    gap: 16px !important;
+    align-items: flex-start !important;
+    text-align: left !important;
   }
 
   .footer-nav-links {
-    gap: 18px;
+    gap: 18px !important;
+    justify-content: flex-start !important;
   }
 }
 
