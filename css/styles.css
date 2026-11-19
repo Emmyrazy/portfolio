@@ -1515,7 +1515,7 @@ textarea {
   background: var(--color-dark-card);
   border-radius: 20px;
   padding: 26px 26px 24px;
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.14);
+  box-shadow: none;
   border: 1px solid rgba(255, 255, 255, 0.08);
 }
 
@@ -1542,11 +1542,15 @@ textarea {
   color: #ffffff;
   font-size: 0.875rem;
   transition: border-color 0.2s ease;
+  box-shadow: none;
+  -webkit-appearance: none;
+  appearance: none;
 }
 
 .field-input:focus {
   outline: none;
   border-color: #ffffff;
+  box-shadow: none;
 }
 
 .field-input::placeholder {
