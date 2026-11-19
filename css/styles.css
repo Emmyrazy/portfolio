@@ -1,5 +1,5 @@
 /* ==========================================================================
-   EMMANUEL IBRANG — PORTFOLIO STYLES
+   EMMANUEL ISHANG — PORTFOLIO STYLES
    ==========================================================================
    Table of Contents
    01. CSS Variables & Design Tokens
@@ -1700,9 +1700,8 @@ textarea.field-input {
 /* ==========================================================================
    12. RESPONSIVE & MOBILE BREAKPOINTS
    Mobile navigation, responsive grid layouts, and touch breakpoints are
-   modularly separated into css/mobile.css
+   modularly loaded via css/mobile.css
    ========================================================================== */
-@import url('mobile.css');
 
 
 /* ==========================================================================

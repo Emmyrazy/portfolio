@@ -1,5 +1,5 @@
 /**
- * Emmanuel Ibrang Portfolio — Application Script
+ * Emmanuel Ishang Portfolio — Application Script
  *
  * Responsibilities:
  *  - Navigation active-state scroll spy
