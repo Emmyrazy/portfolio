@@ -1709,7 +1709,58 @@ textarea.field-input {
 
 
 /* ==========================================================================
-   13. PLAYGROUND PAGE STYLES
+   13. WORKS PAGE STYLES
+   ========================================================================== */
+.works-page-section {
+  position: relative;
+  padding-top: 130px;
+  padding-bottom: 96px;
+  overflow: hidden;
+}
+
+.works-page-orbit-bg {
+  position: absolute;
+  top: -60px;
+  right: -80px;
+  width: 960px;
+  max-width: 90vw;
+  pointer-events: none;
+  opacity: 0.35;
+  z-index: 0;
+}
+
+.works-page-orbit-bg img {
+  width: 100%;
+  height: auto;
+}
+
+.works-page-header {
+  position: relative;
+  z-index: 1;
+  max-width: 640px;
+  margin-bottom: 56px;
+}
+
+.works-page-title {
+  font-family: var(--font-heading);
+  font-size: clamp(2.4rem, 4.8vw, 3.5rem);
+  font-weight: 400;
+  letter-spacing: -0.035em;
+  line-height: 1.1;
+  color: var(--color-text);
+  margin-bottom: 16px;
+}
+
+.works-page-subtitle {
+  font-size: 0.95rem;
+  color: #52525b;
+  line-height: 1.6;
+  max-width: 520px;
+}
+
+
+/* ==========================================================================
+   14. PLAYGROUND PAGE STYLES
    ========================================================================== */
 .playground-section {
   padding-top: 130px;

@@ -614,6 +614,27 @@
 }
 
 @media (max-width: 768px) {
+  /* Works Page Responsive */
+  .works-page-section {
+    padding-top: 96px;
+    padding-bottom: 56px;
+  }
+
+  .works-page-header {
+    margin-bottom: 32px;
+  }
+
+  .works-page-title {
+    font-size: clamp(1.85rem, 7vw, 2.75rem);
+    line-height: 1.14;
+    margin-bottom: 12px;
+  }
+
+  .works-page-subtitle {
+    font-size: clamp(0.9rem, 3.8vw, 0.95rem);
+    line-height: 1.55;
+  }
+
   .playground-section {
     padding-top: 96px;
     padding-bottom: 48px;
@@ -679,6 +700,15 @@
 }
 
 @media (max-width: 480px) {
+  .works-page-section {
+    padding-top: 88px;
+    padding-bottom: 44px;
+  }
+
+  .works-page-title {
+    font-size: clamp(1.75rem, 7.5vw, 2.35rem);
+  }
+
   .playground-section {
     padding-top: 88px;
     padding-bottom: 40px;
