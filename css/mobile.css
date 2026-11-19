@@ -419,16 +419,16 @@
 
   .footer-inner {
     flex-direction: column;
-    align-items: center;
-    text-align: center;
+    align-items: flex-start;
+    text-align: left;
     gap: 20px;
   }
 
   .footer-left {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
+    align-items: flex-start;
+    text-align: left;
     gap: 4px;
   }
 
@@ -443,15 +443,15 @@
   .footer-right {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
+    align-items: flex-start;
+    text-align: left;
     gap: 12px;
   }
 
   .footer-nav-links {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 24px;
   }
 
@@ -462,7 +462,7 @@
   .footer-brand-copy {
     font-size: 0.75rem;
     color: #52525b;
-    text-align: center;
+    text-align: left;
   }
 }
 
