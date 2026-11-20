@@ -11,27 +11,45 @@
 @media (max-width: 1200px) {
   .container {
     padding: 0 48px;
+    padding-left: max(48px, env(safe-area-inset-left));
+    padding-right: max(48px, env(safe-area-inset-right));
   }
   .site-header {
     padding: 16px 48px;
+    padding-top: max(16px, env(safe-area-inset-top));
+    padding-left: max(48px, env(safe-area-inset-left));
+    padding-right: max(48px, env(safe-area-inset-right));
+    padding-bottom: 16px;
   }
 }
 
 @media (max-width: 768px) {
   .container {
     padding: 0 20px;
+    padding-left: max(20px, env(safe-area-inset-left));
+    padding-right: max(20px, env(safe-area-inset-right));
   }
   .site-header {
     padding: 14px 20px;
+    padding-top: max(14px, env(safe-area-inset-top));
+    padding-left: max(20px, env(safe-area-inset-left));
+    padding-right: max(20px, env(safe-area-inset-right));
+    padding-bottom: 14px;
   }
 }
 
 @media (max-width: 480px) {
   .container {
     padding: 0 16px;
+    padding-left: max(16px, env(safe-area-inset-left));
+    padding-right: max(16px, env(safe-area-inset-right));
   }
   .site-header {
     padding: 12px 16px;
+    padding-top: max(12px, env(safe-area-inset-top));
+    padding-left: max(16px, env(safe-area-inset-left));
+    padding-right: max(16px, env(safe-area-inset-right));
+    padding-bottom: 12px;
   }
 }
 
@@ -85,6 +103,7 @@
   opacity: 0;
   transition: opacity 0.25s ease;
   pointer-events: none;
+  touch-action: none;
 }
 
 .mobile-nav-backdrop.open {
@@ -97,9 +116,12 @@
 .mobile-nav-drawer {
   display: none;
   position: fixed;
-  top: 68px;
-  left: 16px;
-  right: 16px;
+  top: calc(64px + env(safe-area-inset-top, 0px));
+  left: max(16px, env(safe-area-inset-left));
+  right: max(16px, env(safe-area-inset-right));
+  max-height: calc(100dvh - 80px - env(safe-area-inset-top, 0px));
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
   background: rgba(15, 15, 18, 0.96);
   -webkit-backdrop-filter: blur(20px) saturate(180%);
   backdrop-filter: blur(20px) saturate(180%);
@@ -418,7 +440,10 @@
 
   /* Footer: Vertically Stacked Mobile Layout — strictly aligned left */
   .site-footer {
-    padding: 44px 0 32px;
+    padding-top: 44px;
+    padding-right: max(0px, env(safe-area-inset-right));
+    padding-bottom: max(32px, calc(24px + env(safe-area-inset-bottom)));
+    padding-left: max(0px, env(safe-area-inset-left));
   }
 
   .footer-inner {
